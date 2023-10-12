@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    int progess = 0;
+    int progress = 0;
     ProgressBar simpleProgressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
                     Thread.sleep(1000);
-                }catch (interruptedException e){
+                }catch (InterruptedException e){
                     e.printStackTrace();
                 }
                 setProgressValue(progress + 10);
